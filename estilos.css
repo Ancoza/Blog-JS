@@ -1,0 +1,85 @@
+/*Body*/
+body {
+    margin:auto;
+    height:3000px;
+    overflow-x:hidden;
+}
+/*Body*/
+
+/*Header*/
+header {
+    width:100%;
+    height:60px;
+    background-color:rgb(255, 255, 255);
+    box-shadow:15px 0px 10px #000;
+    position:fixed;
+    z-index:1;
+}
+
+#button {
+    width:60px;
+    height:60px;
+    background:url('https://static.thenounproject.com/png/547157-200.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:absolute;
+    right:0;
+}
+/*Header*/
+
+/*Contenido*/
+main {
+    width:100%;
+    height:2690px;
+    margin-top:60px;
+    display:inline-table;
+}
+
+.content {
+    width:75%;
+    height:100%;
+}
+
+.asideMenu {
+    width:25%;
+    height:100%;
+    margin-top:60px;
+    background-color:rgb(172, 172, 172);
+    position:fixed;
+    right:-25%;
+    top:0px;
+    transition-duration:.5s;
+}
+
+.asideMenu ol {
+    margin:0px 0px 0px 10px;
+    padding:0;
+}
+
+.asideMenu ol li {
+    list-style:none;
+    margin-bottom:20px;
+    cursor: pointer;
+}
+/*Contenido*/
+
+/*Footer*/
+footer {
+    width:100%;
+    height:250px;
+    background-color:black;
+}
+/*Footer*/
+
+/*Clases dinamicas*/
+.menuDesplegado {
+    width:25%;
+    height:100%;
+    background-color:rgb(172, 172, 172);
+    margin-top:60px;
+    position:fixed;
+    right:0;
+    top:0px;
+    transition-duration:.5s;
+}
+/*Clases dinamicas*/
