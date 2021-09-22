@@ -81,41 +81,62 @@ main {
 }
 
 .asideMenu ol {
-    margin:0px 0px 0px 10px;
+    margin:0;
     padding:0;
 }
 
 .asideMenu ol li {
     list-style:none;
     margin-bottom:20px;
-    cursor: pointer;
+    padding:0px 0px 0px 20px;
 }
 
 .asideMenu h3 {
-    margin-left:20px;
-    margin-top:20px;
+    padding-left:20px;
+    padding-top:20px;
+    margin:0;
     font-family:'Franklin Gothic Medium';
     font-size:40px;
+    height:100px;
+    
 }
 
 #list li {
-    margin-left:20px;
     font-family:'Franklin Gothic Medium';
     font-size:15px;
 }
 
-#list:nth-child(0) ul {
-    margin:0;
-    padding:0;
+#list > li:nth-child(1) {
+    background:url('https://gblobscdn.gitbook.com/assets%2F-LJk3qNtsfIs99X5wtsi%2F-LJk3u8eRc67TJYj3D2A%2F-LJk4-mtsrPjYhZjr5S0%2Fjavascript.png?alt=media');
+    background-repeat:no-repeat;
+    background-position:20% 50%;
 }
 
-#list:nth-child(0) ul li {
-    margin:0;
-    padding:0;
+#list > li:nth-child(2) {
+    background:url('http://www.elemento115.es/wp-content/uploads/2017/02/jquery-desarrollo-front-elemento115.jpg');
+    background-repeat:no-repeat;
+    background-position:20% 50%;
+    background-size:cover;
+    color:#fff;
 }
 
-.asideMenu ol:nth-child(1) {
-    color:red;
+#list > li:nth-child(3) {
+    margin-top:50px;
+}
+
+#list > li:nth-child(3) a {
+    color:rgb(76, 36, 255);
+    text-align:center;
+    font-size:25px;
+    text-decoration:none;
+}
+
+#list > li:nth-child(3) a:hover {
+    text-decoration:underline;
+}
+
+#list li ul li {
+    cursor: pointer;
 }
 /*Contenido*/
 

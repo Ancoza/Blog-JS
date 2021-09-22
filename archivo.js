@@ -2,6 +2,8 @@ var btnMenu = document.getElementById('button');
 var menu = document.getElementById('rightMenu');
 var lista = document.getElementById('list');
 var jsPicture = document.getElementById('jsPic');
+var jqSpace = document.getElementById('JQueryObj');
+var jsSpace = document.getElementById('JSObj');
 
 window.addEventListener('DOMContentLoaded', () => {
     window.scroll({
@@ -18,10 +20,16 @@ btnMenu.addEventListener('click', () => {
     }
 });
 
-lista.children[0].children[0].addEventListener('click', () => {
+lista.children[0].children[0].children[0].addEventListener('click', () => {
     window.scroll({
-        top:2040,
+        top: jsSpace.offsetTop - 100,
         behavior: "smooth"
     });
 });
 
+lista.children[1].children[0].children[0].addEventListener('click', () => {
+    window.scroll({
+        top: jqSpace.offsetTop - 100,
+        behavior: "smooth"
+    });
+});
