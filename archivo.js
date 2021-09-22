@@ -1,6 +1,7 @@
 var btnMenu = document.getElementById('button');
 var menu = document.getElementById('rightMenu');
 var lista = document.getElementById('list');
+var jsPicture = document.getElementById('jsPic');
 
 window.addEventListener('DOMContentLoaded', () => {
     window.scroll({
@@ -17,9 +18,10 @@ btnMenu.addEventListener('click', () => {
     }
 });
 
-lista.children[0].addEventListener('click', () => {
+lista.children[0].children[0].addEventListener('click', () => {
     window.scroll({
         top:2040,
         behavior: "smooth"
     });
 });
+

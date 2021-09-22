@@ -10,10 +10,17 @@ body {
 header {
     width:100%;
     height:60px;
-    background-color:rgb(255, 255, 255);
-    box-shadow:15px 0px 10px #000;
+    background-color:rgba(255, 255, 255, 0.788);
+    box-shadow:5px 0px 10px #000;
     position:fixed;
     z-index:1;
+}
+
+header img {
+    width:40px;
+    height:40px;
+    margin-left:10px;
+    margin-top:10px;
 }
 
 #button {
@@ -23,6 +30,7 @@ header {
     background-repeat:no-repeat;
     background-size:cover;
     position:absolute;
+    top:0;
     right:0;
 }
 /*Header*/
@@ -40,11 +48,32 @@ main {
     height:100%;
 }
 
+.content > h1 {
+    margin-left:20px;
+    margin-top:20px;
+    font-family:'Franklin Gothic Medium';
+    font-size:50px;
+}
+
+.jsContent {
+    width:100%;
+    height:50%;
+    border-top:5px solid #000;
+
+}
+
+.JQContent {
+    width:100%;
+
+    border-top:5px solid #000;
+}
+
 .asideMenu {
     width:25%;
     height:100%;
     margin-top:60px;
-    background-color:rgb(172, 172, 172);
+    background-color:rgba(172, 172, 172, 0.37);
+    backdrop-filter:blur(5px);
     position:fixed;
     right:-25%;
     top:0px;
@@ -61,6 +90,33 @@ main {
     margin-bottom:20px;
     cursor: pointer;
 }
+
+.asideMenu h3 {
+    margin-left:20px;
+    margin-top:20px;
+    font-family:'Franklin Gothic Medium';
+    font-size:40px;
+}
+
+#list li {
+    margin-left:20px;
+    font-family:'Franklin Gothic Medium';
+    font-size:15px;
+}
+
+#list:nth-child(0) ul {
+    margin:0;
+    padding:0;
+}
+
+#list:nth-child(0) ul li {
+    margin:0;
+    padding:0;
+}
+
+.asideMenu ol:nth-child(1) {
+    color:red;
+}
 /*Contenido*/
 
 /*Footer*/
@@ -75,7 +131,7 @@ footer {
 .menuDesplegado {
     width:25%;
     height:100%;
-    background-color:rgb(172, 172, 172);
+    background-color:rgba(172, 172, 172, 0.37);
     margin-top:60px;
     position:fixed;
     right:0;
@@ -83,3 +139,7 @@ footer {
     transition-duration:.5s;
 }
 /*Clases dinamicas*/
+
+/*Keyframes*/
+
+/*Keyframes*/
