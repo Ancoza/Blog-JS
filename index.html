@@ -18,7 +18,7 @@
             <div id="JSObj" class="jsContent">
                 <h1>Primeros pasos JavaScript</h1>
                 <p>
-                    Para iniciar a programas en JavaScript, primero debemos aprender como podemos trabajar en conjunto con un documento HTML, eso significa, que debemos aprender como enlazar un documento JavaScript con un documento HTML.
+                    Para iniciar a programar en JavaScript, primero debemos aprender como podemos trabajar en conjunto con un documento HTML, eso significa, que debemos aprender como enlazar un documento JavaScript con un documento HTML.
                     <br><br>
                     Podemos trabajar JavaScript en conjunto con HTML de dos maneras. La primera es usando la etiqueta de HTML "script" y de esa manera escribir nuestro codigo en el mismo documento HTML, de la siguiente manera: 
                     <br>
@@ -37,7 +37,7 @@
                         </code>
                     </pre>
                     <br>
-                    <p>La otra forma de trabajar con JavaScript y HTML en conjunto es enlazando un documento mediente la etiqueta "script" y su atributo "src", de la siguiente manera: <br>HTML:</p>
+                    <p>La otra forma de trabajar con JavaScript y HTML en conjunto, es enlazando un documento mediente la etiqueta "script" y su atributo "src", de la siguiente manera: <br>HTML:</p>
                     <pre>
                         <code>
                             &lt;html&gt;
@@ -90,7 +90,135 @@
                         console.log(nombre);
                     </code>
                 </pre>
-                <img src="../Blog-JS/Imagenes/nombreConsola.PNG" alt="">
+                <img src="../Blog-JS/Imagenes/nombreConsola.PNG" alt="captura de consola">
+                
+                <h1>Concatenar cadenas en JS</h1>
+                <p>
+                    En JS exiten muchas maneras de concatenar cadenas de texto o incluso concatenar una cadena de texto con un valor numerico. Primero aprenderemos como concatenar cadenas de texto. <br>
+                    Para hacerlo, supongamos que tenemos tres variables las cuales almacenan texto: 
+                </p>
+                <pre>
+                    <code>
+                        var nombre = "Emiliano"
+                        var apellido = "Urbina"
+                        var domicilio = "Ciudad Sandino"
+                    </code>
+                </pre>
+                <p>Ahora, imaginemos que queremos mostrar el valor de dichas variables en un solo mensaje. Podriamos unir todas las variables en una variable global que contenga los valores de dichas variables, de la siguiente manera: </p>
+                <pre>
+                    <code>
+                        var nombre = "Emiliano";
+                        var apellido = "Urbina";
+                        var domicilio = "Ciudad Sandino";
+
+                        var mensaje = nombre +" "+ apellido +" "+ domicilio;
+                        console.log(mensaje);
+                    </code>
+                </pre>
+                <img src="../Blog-JS/Imagenes/concatenacion 1.PNG" alt="concatenando variables">
+                <p>Otra forma de hacerlo, es concatenando las variables directamente en el "console.log()", de esta manera: </p>
+                <pre>
+                    <code>
+                        var nombre = "Emiliano";
+                        var apellido = "Urbina";
+                        var domicilio = "Ciudad Sandino";
+
+                        console.log(nombre +" "+ apellido +" "+ domicilio);
+                    </code>
+                </pre>
+                <img src="../Blog-JS/Imagenes/concatenacion 1.PNG" alt="concatenando variables">
+                <p>Incluso podriamos escribir directamente los mensajes en el "console.log()" y concatenar con otras variables que contengan texto: </p>
+                <pre>
+                    <code>
+                        var nombre = "Emiliano";
+                        var apellido = "Urbina";
+                        var domicilio = "Ciudad Sandino";
+
+                        console.log(nombre +" "+ apellido +" "+"vive en"+" "+ domicilio);
+                    </code>
+                </pre>
+                <img src="../Blog-JS/Imagenes/concatenacion 2.PNG" alt="concatenando variables">
+                <p>También podriamos usar esta sintaxis y obtendriamos exactamente el mismo resultado: </p>
+                <pre>
+                    <code>
+                        var nombre = "Emiliano";
+                        var apellido = "Urbina";
+                        var domicilio = "Ciudad Sandino";
+
+                        console.log(nombre, apellido, domicilio);
+                    </code>
+                </pre>
+                <p>Por ultimo, pero no menos importante, podemos usar la sintaxis propuesta por ES6 (EcmaScript 6), la cual nos permite concatenar el valor de una variable (Aunque tenga un valor numerico) <br>
+                    usando estas comillas `` (las obtenemos con la combinación de teclas alt + 96), y dentro de ellas, escribir el mensaje que querramos mostrar en conjunto con nombres de variables cuyos valores querramos mostrar, siempre y cuando dichas variables esten dentro
+                    de el siguiente formato de simbolos "${nombre de la variable}", de la siguiente manera:                     
+                </p>
+                <pre>
+                    <code>
+                        var nombre = "Emiliano";
+                        var apellido = "Urbina";
+                        var domicilio = "Ciudad Sandino";
+                        var edad = 20;
+
+                        console.log(`${nombre} ${apellido} vive en ${domicilio} y tiene ${edad} años.`);
+                    </code>
+                </pre>
+                <img src="../Blog-JS/Imagenes/concatenacion 3.PNG" alt="concatenando variables">
+
+                <h1>Operadores lógicos JS</h1>
+                <p>
+                    En JS, al igual que en otros lenguajes de programación, podemos hacer operación aritmeticas mediante el uso de operadores como +, -, *, /, para suma, resta, multiplicación y división respectivamente. <br>
+                    Para hacerlo podriamos almacenar el valor de la suma, resta, multiplicación o división dentro de otra variable y sumar los valores de dichas variables como si de dos numeros se tratase, de la siguiente manera: 
+                </p>
+                <pre>
+                    <code>
+                        var num1 = 15; 
+                        var num2 = 5; 
+                        var suma = num1 + num2; 
+                        var resta = num1 - num2;
+                        var multiplicación = num1 * num2;
+                        var division = num1 / num2;
+                        
+                        console.log(`Esta es la suma: ${suma}. Esta es la resta: ${resta}. Esta es la multiplicación: ${multiplicación}. Esta es la división: ${division}`)
+                    </code>
+                </pre>
+                <img src="../Blog-JS/Imagenes/operadores 1.PNG" alt="Operadores">
+                <p>Otra manera de hacerlo es operando directamente en el lugar donde se desea mostrar el resultado de la operación, de la siguiente manera: </p>
+                <pre>
+                    <code>
+                        var num1 = 15; 
+                        var num2 = 5; 
+                        
+                        console.log(
+                            `Esta es la suma: ${num1 + num2}. Esta es la resta: ${num1 - num2}. 
+                            Esta es la multiplicación: ${num1 * num2}. Esta es la división: ${num1 / num2}`
+                        )
+                    </code>
+                </pre>
+                <img src="../Blog-JS/Imagenes/operadores 1.PNG" alt="Operadores">
+                <p>Por ultimo, podemos reasignar el valor de la variable sumandole el valor de otra variable, es decir, sin necesidad de una tercera variable para contener el resultado de la operación, podriamos 
+                    realizar la operación dentro de alguna de las dos variables operando, siempre teniendo cuidado del orden en las operaciones de resta y divisón pues no son conmutativas y pueden darnos resultados 
+                    erroneos si no las ubicamos bien. Lo podemos hacer de la siguiente manera: 
+                </p>
+                <pre>
+                    <code>
+                        var num1 = 15; 
+                        var num2 = 5; 
+                        
+                        num1 = num1 + num2;
+                        console.log(num1)
+                    </code>
+                </pre>
+                <p>Podemos abreviarlo un poco mas: </p>
+                <pre>
+                    <code>
+                        var num1 = 15; 
+                        var num2 = 5; 
+                        
+                        num1 += num2;
+                        console.log(num1);
+                    </code>
+                </pre>
+                <img src="../Blog-JS/Imagenes/operadores 2.PNG" alt="Operadores">
             </div>
             <div id="JQueryObj" class="JQContent">
                 

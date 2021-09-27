@@ -1,7 +1,7 @@
 /*Body*/
 body {
     margin:auto;
-    height:8000px;
+    height:15000px;
     overflow-x:hidden;
     position:relative;
 }
@@ -39,7 +39,7 @@ header img {
 /*Contenido*/
 main {
     width:100%;
-    height:7560px;
+    height:14560px;
     margin-top:60px;
     display:inline-table;
 }
@@ -142,7 +142,7 @@ main {
 #list > li:nth-child(1) {
     background:url('https://gblobscdn.gitbook.com/assets%2F-LJk3qNtsfIs99X5wtsi%2F-LJk3u8eRc67TJYj3D2A%2F-LJk4-mtsrPjYhZjr5S0%2Fjavascript.png?alt=media');
     background-repeat:no-repeat;
-    background-position:20% 50%;
+    background-position:15% 50%;
 }
 
 #list > li:nth-child(2) {
@@ -173,7 +173,7 @@ main {
 }
 
 pre {
-    width:50%;
+    width:90%;
     background-color:rgb(236, 236, 236);
     margin-left:20px;
     border:3px solid #000;
