@@ -16,6 +16,48 @@
         <div class="content">
             <h1>JavaScript y Jquery</h1>
             <div id="JSObj" class="jsContent">
+                <h1>Primeros pasos JavaScript</h1>
+                <p>
+                    Para iniciar a programas en JavaScript, primero debemos aprender como podemos trabajar en conjunto con un documento HTML, eso significa, que debemos aprender como enlazar un documento JavaScript con un documento HTML.
+                    <br><br>
+                    Podemos trabajar JavaScript en conjunto con HTML de dos maneras. La primera es usando la etiqueta de HTML "script" y de esa manera escribir nuestro codigo en el mismo documento HTML, de la siguiente manera: 
+                    <br>
+                    <pre>
+                        <code>
+                            &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;tittle&gt;Mi primera pagina web&lt;/html&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;script&gt;
+                                        var i = 5;
+                                    &lt;/script&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code>
+                    </pre>
+                    <br>
+                    <p>La otra forma de trabajar con JavaScript y HTML en conjunto es enlazando un documento mediente la etiqueta "script" y su atributo "src", de la siguiente manera: <br>HTML:</p>
+                    <pre>
+                        <code>
+                            &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;tittle&gt;Mi primera pagina web&lt;/html&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;script src="archivo.js"&gt;&lt;/script&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code>
+                    </pre>
+                    <P>JavaScript: </P>
+                    <pre>
+                        <code>
+                            var i = 5;
+                        </code>
+                    </pre>
+                </p>
+
                 <h1>Variables en JS (var, let y const)</h1>
                 <p>En JS (JavaScript) tenemos distintas formas de declarar variables, al igual que en otros lenguajes, pero en este, en particular, se hace de manera muy facil. <br>
                     Primero que nada es importante aclarar que tenemos 3 palabras resevadas para declarar variables, las cuales son, var, let y const. <br> <br>
@@ -24,19 +66,34 @@
                     3. const: La mayor particularidad de esta manera de declarar una variable, es que la palabra reservada const evita que el valor inicial de la variable sea cambiado. <br><br>
                     Otro aspecto muy importante a mencionar son los tipos de datos. En JS no es necesario usar las palabras reservadas Int, String, Double, Float para especificar el tipo de dato a usar. 
                     <br><br>
-                    Si por ejemplo quisieramo declarar una variable de tipo String, simplemente tendriamos que escribir la palabra var, let o const (dependiendo de querramos usar), luego el nombre de la variable y se iguala al valor de la variable entre comillas dobles, de la siguiente manera:
-                    <pre>
-                        <code>
-                            var nombre = "Emiliano"
-                            let nombre = "Marvin"
-                            const nombre = "Marco"
-                        </code>
-                    </pre>
+                    Si por ejemplo quisieramo declarar una variable de tipo String, simplemente tendriamos que escribir la palabra var, let o const (dependiendo de querramos usar), luego el nombre de la variable y se iguala al valor de la variable entre comillas dobles, posteriormente se cierra la linea de codigo con ";" de la siguiente manera:
                 </p>
+                <pre>
+                    <code>
+                        var nombre = "Emiliano";
+                        let nombre = "Marvin";
+                        const nombre = "Marco";
+                    </code>
+                </pre>
+
+                <h1>Imprimir mensajes en consola JS</h1>
+                <p>
+                    Anteriormente vimos el uso correcto y declaración de variables en JS (JavaScript), pero, ahora aprenderemos como mostrar el valor de una variable en la consola del navegador.
+                    <br><br>
+                    Para imprimir en valor de una variable en la consola, debemos usar las propiedad "console.log()". Para usarla, simplemente debemos declararla y dentro de los parentesis escribiremos el nombre la variable
+                    cuyo valor queremos mostrar, de la siguiente manera: 
+                </p>
+                <pre>
+                    <code>
+                        var nombre = "Emiliano";
+                        
+                        console.log(nombre);
+                    </code>
+                </pre>
+                <img src="../Blog-JS/Imagenes/nombreConsola.PNG" alt="">
             </div>
             <div id="JQueryObj" class="JQContent">
-                <h1>Introduccion</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint natus iure excepturi aliquam odio consequatur quis beatae magnam iste rem cum iusto tempore assumenda commodi explicabo voluptate repellat, vitae qui!</p>
+                
             </div>
         </div>
         <div id="rightMenu" class="asideMenu">
@@ -60,7 +117,9 @@
             </ol>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        
+    </footer>
     <script src="archivo.js"></script>
 </body>
 </html>

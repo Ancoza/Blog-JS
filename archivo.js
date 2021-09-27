@@ -48,7 +48,6 @@ function detectarElementosContent(){
     };
 };
 detectarElementosContent();
-console.log(jsSpace.childElementCount)
 function scrollTraslationJs(b){
     for(var i = 0; i < jsSpace.childElementCount; i++){
         if(jsSpace.children[i].tagName == "H1" && b.innerHTML == jsSpace.children[i].innerHTML){
