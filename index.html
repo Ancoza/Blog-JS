@@ -219,13 +219,108 @@
                     </code>
                 </pre>
                 <img src="../Blog-JS/Imagenes/operadores 2.PNG" alt="Operadores">
+
+                <h1>Conversiones de tipos de datos en JS</h1>
+                <p>
+                    Aunque en JS no sea necesario especificar el tipo de dato de una variable, si que podemos convertir las variables a otros tipos de datos. Esto lo hacemos mediante palabras reservadas: <br><br>
+                    1 .toString() - Se usa para convertir valores de cualquier otro tipo a valores de tipo String o texto. <br>
+                    2 parseInt() - Se usa para convertir cualquier tipo de dato a entero. <br>
+                    3 parseFloat() - Se usa para convertir cualquier tipo de dato a flotante, esto nos permite visualizar los numero con decimales de tenerlos.
+                </p>
+                <pre>
+                    <code>
+                        var numero = "13.34";  
+                        var numero2 = 13.43
+                        
+                        console.log(`
+                            Este es un entero convertido a String: ${numero2.toString()}. 
+                            Este es un String convetido a entero: ${parseInt(numero)}. 
+                            Este es un String convertido a flotante ${parseFloat(numero)}`
+                        );
+                    </code>
+                </pre>
+                <img src="../Blog-JS/Imagenes/conversiones.PNG" alt="Conversiones">
+                <p>Es importante tener en cuenta que si queremos convertir un String usando parseInt() o parseFloat(), es vital que el contenido del String realmente sea un numero, de lo contrario, nos retornada un valor NaN (Not a Number):</p>
+                <pre>
+                    <code>
+                        var numero = "Emiliano";  
+                        
+                        console.log(parseInt(numero));
+                    </code>
+                </pre>
+                <img src="../Blog-JS/Imagenes/conversionesNaN.PNG" alt="Conversiones">
+
+                <h1>Sentencia if/else en JS</h1>
+                <p>
+                    En JS, al igual que en otros lenguajes, podemos usar la sentencia if/else para validar si un dato cumple con una condición. Por ejemplo, validar que un número sea mayor de 10, o que una palabra coincida con otra.
+                    <br><br>
+                    Comparando numeros: <br>
+                    Para comparar numeros podemos usar lo siguientes operadores de comparación == (Igual a), === (Estrictamente igual a), !== (Distinto de), &lt; (Mayor que), &gt; (Menor que). Si la condición inicial se cumple, se ejecutara
+                    el codigo que haya dentro de las primeras llaves, de lo contrario, se ejecutara lo que se encuentre en el else.
+                </p>
+                <pre>
+                    <code>
+                        var num1 = 7; 
+
+                        //Igual a
+                        if(num1 == 7){
+                            console.log(`El numero ${num1} es igual a 7`);
+                        };
+
+                        //Estrictamente igual a
+                        if(num1 === 7.34){
+                            console.log(`El numero ${num1} es igual a 7.34`);
+                        }else {
+                            console.log(`El numero ${num1} no es igual a 7.34`);        
+                        };
+
+                        //Distinto de 
+                        if(num1 !== 7.34){
+                            console.log(`El numero ${num1} es distinto a 7.34`);
+                        }else {
+                            console.log(`El numero ${num1} no es distinto a 7.34}`);        
+                        };
+
+                        //Mayor que
+                        if(num1 > 7.34){
+                            console.log(`El numero ${num1} es mayor a 7.34`);
+                        }else {
+                            console.log(`El numero ${num1} no es mayor a 7.34`);        
+                        };
+
+                        //Menor que
+                        if(num1 < 7.34){
+                            console.log(`El numero ${num1} es menor a 7.34`);
+                        }else {
+                            console.log(`El numero ${num1} no es menor a 7.34`);        
+                        };
+                    </code>
+                </pre>
+                <img src="../Blog-JS/Imagenes/condicionales.PNG" alt="condicionales">
+                <p>También podriamos validar usando dos condiciones en un mismo condicional separadas por los operadores || (OR) o && (AND). Cuando usamos ||, estamos diciendo que se ejecute algo si una u otra condición se cumple y cuando 
+                    usamos && estamos diciendo que se ejecute algo cuando ambas condiciones se cumplen, de la siguiente manera: 
+                </p>
+                <pre>
+                    <code>
+                        var num1 = 7; 
+
+                        if(num1 > 10 || num1 == 7){
+                            console.log(`${num1} es mayor que 10 o es igual a 7`)
+                        };
+
+                        if(num1 > 5 && num1 == 7){
+                            console.log(`${num1} es mayor que 5 y es igual a 7`)
+                        };
+                    </code>
+                </pre>
+                <img src="../Blog-JS/Imagenes/condicionales 2.PNG" alt="condicionales">
             </div>
             <div id="JQueryObj" class="JQContent">
                 
             </div>
         </div>
         <div id="rightMenu" class="asideMenu">
-            <h3>Sumario</h3>
+            <h3>Menu</h3>
 
             <ol id="list">
                 <li>
